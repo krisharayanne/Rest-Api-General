@@ -91,7 +91,7 @@ let response;
 
     response = await axios({
         method: 'post',
-        url: 'https://many-news-run-202-186-86-92.loca.lt/api/wallets',
+        url: 'https://rest-api-decrypt.herokuapp.com/api/wallets',
         data: {
           encryptedPrivateKey: sellerEncryptedPrivateKey,
         }
@@ -189,7 +189,7 @@ let response;
 try {
     response = await axios({
         method: 'post',
-        url: 'https://many-news-run-202-186-86-92.loca.lt/api/wallets',
+        url: 'https://rest-api-decrypt.herokuapp.com/api/wallets',
         data: {
           encryptedPrivateKey: sellerEncryptedPrivateKey,
         }
@@ -252,7 +252,7 @@ async function transferAvax(receiverWalletAddress, avaxQuantity) {
     try{
     response = await axios({
         method: 'post',
-        url: 'https://many-news-run-202-186-86-92.loca.lt/api/wallets',
+        url: 'https://rest-api-decrypt.herokuapp.com/api/wallets',
         data: {
           encryptedPrivateKey: companyEncryptedPrivateKey,
         }
